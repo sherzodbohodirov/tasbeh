@@ -154,6 +154,31 @@
     </header>
 
 
+    <script>
+        navAnim = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.logo1');
+            const navlink = document.querySelectorAll('.logo1 li');
+
+            burger.addEventListener("click", () => {
+                nav.classList.toggle('activ');
+
+                navlink.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        
+                    }
+                });
+
+                burger.classList.toggle("toggle");
+
+            });
+        };
+
+        navAnim();
+    </script>
+
 </body>
 
 </html>
